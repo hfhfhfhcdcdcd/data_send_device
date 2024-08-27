@@ -1,6 +1,0 @@
-input rst_n,
-input sys_clk,
-input data,
-input time_set,
-input send_en,
-input 
