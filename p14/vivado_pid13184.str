@@ -1,0 +1,162 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 13184
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Aug 27 22:04:21 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/vivado/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/vivado/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lenovo
+User home directory: C:/Users/lenovo
+User working directory: D:/vivadofile/data_send_device/data_send_device-1/p14
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/vivado/Vivado
+HDI_APPROOT: D:/vivado/Vivado/2020.2
+RDI_DATADIR: D:/vivado/Vivado/2020.2/data
+RDI_BINDIR: D:/vivado/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/vivado/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/vivadofile/data_send_device/data_send_device-1/p14/vivado.log
+Vivado journal file location: 	D:/vivadofile/data_send_device/data_send_device-1/p14/vivado.jou
+Engine tmp dir: 	D:/vivadofile/data_send_device/data_send_device-1/p14/.Xil/Vivado-13184-DESKTOP-M3HT15I
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/vivado/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/vivado/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/vivado/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/vivado/Vivado/2020.2
+XILINX_SDK: D:/vivado/Vitis/2020.2
+XILINX_VITIS: D:/vivado/Vitis/2020.2
+XILINX_VIVADO: D:/vivado/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/vivado/Vivado/2020.2
+
+
+GUI allocated memory:	171 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,145 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 84 MB (+85523kb) [00:00:04]
+// [Engine Memory]: 1,145 MB (+1048922kb) [00:00:04]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\vivadofile\data_send_device\data_send_device-1\p14\p14.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/vivadofile/data_send_device/data_send_device-1/p14/p14.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 92 MB (+3840kb) [00:00:07]
+// [GUI Memory]: 116 MB (+20326kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  2128 ms.
+// Tcl Message: open_project D:/vivadofile/data_send_device/data_send_device-1/p14/p14.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,145 MB. GUI used memory: 72 MB. Current time: 8/27/24, 10:04:21 PM CST
+// Project name: p14; location: D:/vivadofile/data_send_device/data_send_device-1/p14; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb (tb.v)]", 6); // D
+// [GUI Memory]: 123 MB (+1325kb) [00:00:20]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb (tb.v)]", 6, true); // D - Node
+// [GUI Memory]: 139 MB (+10141kb) [00:00:24]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb (tb.v)]", 6, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 147 MB (+1026kb) [00:00:24]
+// Elapsed time: 10 seconds
+selectCodeEditor("tb.v", 148, 260); // bP
+selectCodeEditor("tb.v", 279, 297); // bP
+selectCodeEditor("tb.v", 278, 260); // bP
+selectCodeEditor("tb.v", 322, 299); // bP
+selectCodeEditor("tb.v", 242, 251); // bP
+selectCodeEditor("tb.v", 291, 303); // bP
+selectCodeEditor("tb.v", 161, 262); // bP
+selectCodeEditor("tb.v", 74, 126); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb.v", 1); // m
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb.v", 1, false, true); // m - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+selectCodeEditor("tb.v", 290, 443); // bP
+selectCodeEditor("tb.v", 289, 443); // bP
+selectCodeEditor("tb.v", 134, 412, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("tb.v", 6, 115); // bP
+selectCodeEditor("tb.v", 140, 437); // bP
+selectCodeEditor("tb.v", 187, 361); // bP
+selectCodeEditor("tb.v", 159, 391); // bP
+selectCodeEditor("tb.v", 189, 341); // bP
+selectCodeEditor("tb.v", 89, 340); // bP
+selectCodeEditor("tb.v", 82, 343); // bP
+selectCodeEditor("tb.v", 153, 402, false, true, false, false, false); // bP - Control Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb.v", 166, 173); // bP
+selectCodeEditor("tb.v", 181, 169); // bP
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("tb.v", 211, 132); // bP
+selectCodeEditor("tb.v", 212, 210); // bP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectCodeEditor("tb.v", 237, 492); // bP
+typeControlKey((HResource) null, "tb.v", 'c'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
