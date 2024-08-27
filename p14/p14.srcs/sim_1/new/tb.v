@@ -1,11 +1,14 @@
 `timescale 1ns/1ps
 module tb ;
+reg  sys_clk;
+reg  rst_n;  
+wire uart_tx ;
 
-    byte_send b1(
-    reg  sys_clk,
-    reg  rst_n,
-    wire uart_tx
-    );
+byte_send b1(
+. sys_clk(sys_clk),
+. rst_n  (rst_n  ),  
+. uart_tx(uart_tx) 
+);
 /*-----------------sys_clk-----------------*/
 initial 
     sys_clk=0;
