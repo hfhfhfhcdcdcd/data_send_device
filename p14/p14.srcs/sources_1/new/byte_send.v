@@ -6,7 +6,7 @@ output byte_send
 
 
 
-uart_data_tx u1(   
+send_byte s1(   
 .sys_clk      (sys_clk )   ,
 .rst_n        (rst_n   )   ,
 .time_set     (time_set)   ,
