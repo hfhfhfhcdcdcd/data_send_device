@@ -5,3 +5,5 @@
 将文件上传到github上建立的repository上面
 # 3
 复制http到vscode中
+# 4 大文件上传不了，挑选小的文本上传
+
