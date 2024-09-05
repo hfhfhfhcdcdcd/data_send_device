@@ -1,29 +1,29 @@
 module send_byte (                           
 input sys_clk         ,          
 input rst_n           ,          
-input [2:0] time_set  ,   //»ù´¡¼ÆÊıÆ÷µÄÉèÖÃ       
+input [2:0] time_set  ,   //åŸºç¡€è®¡æ•°å™¨çš„è®¾ç½®       
 input [7:0] data      ,          
 input send_en         ,          
 output reg uart_tx    ,          
 output reg tx_done  
     );
-/*-----------------------±äÁ¿µÄÉùÃ÷-----------------------------*/
-reg [31:0] cnt;//»ù±¾¼ÆÊıÆ÷
-reg [3:0] cnt2;//2¼¶¶¨Ê±Æ÷ 
+/*-----------------------å˜é‡çš„å£°æ˜-----------------------------*/
+reg [31:0] cnt;//åŸºæœ¬è®¡æ•°å™¨
+reg [3:0] cnt2;//2çº§å®šæ—¶å™¨ 
 reg [31:0] time_cnt;
 
-/*-----------------------ÉèÖÃÊ±¼ä¼ä¸ô-----------------------------*/ 
+/*-----------------------è®¾ç½®æ—¶é—´é—´éš”-----------------------------*/ 
 always@(*)
 if(!rst_n)
     time_cnt<=434;
-else 
+else
     case(time_set)  
         0:time_cnt<=10416;                 //4800; 
         1:time_cnt<=5208;                  //9600; 
         2:time_cnt<=434;                   //115200;
         default:time_cnt<=434;             //115200;
     endcase
-/*-----------------------»ù±¾¼ÆÊıÆ÷-----------------------------*/
+/*-----------------------åŸºæœ¬è®¡æ•°å™¨-----------------------------*/
 always@(posedge sys_clk or negedge rst_n)
 if(!rst_n)
     cnt<=32'd0;
@@ -34,10 +34,10 @@ else if(send_en)
         cnt<=cnt+1;
 else//!send_en
     cnt<=32'd0;     
-/*-----------------------2¼¶¼ÆÊıÆ÷-----------------------------*/
+/*-----------------------2çº§è®¡æ•°å™¨-----------------------------*/
 always@(posedge sys_clk or negedge rst_n)
 if(!rst_n)
-    cnt2<=4'd0;//Ä¬ÈÏ·¢startÎ»
+    cnt2<=4'd0;//é»˜è®¤å‘startä½
 else if(send_en)begin
     if((cnt2>=0)&&(cnt2<10))begin
         if(cnt==time_cnt-1)
@@ -46,7 +46,7 @@ else if(send_en)begin
             cnt2<=cnt2;
      end
      else if(cnt2==10)
-        cnt2<=0;//cnt2µÄÇåÁã
+        cnt2<=0;//cnt2çš„æ¸…é›¶
      else  
             cnt2<=cnt2;
 end
@@ -82,4 +82,5 @@ else if(send_en)
         tx_done<=0;                
 else
         tx_done<=0;
-endmodule                                         
+endmodule          
+                               

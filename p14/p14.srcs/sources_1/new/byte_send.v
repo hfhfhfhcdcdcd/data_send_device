@@ -6,7 +6,7 @@ output uart_tx
 
 reg [7:0] data        ;
 reg send_en           ;
-wire tx_done           ;
+wire tx_done          ;
 
 send_byte s1(   
 .sys_clk      (sys_clk )   ,
@@ -36,7 +36,7 @@ always @(posedge sys_clk or negedge rst_n) begin
     if (!rst_n) begin
         send_en<=0;
     end
-    else if (cnt_10ms==time_10ms-1) begin
+    else if (cnt_10ms== 1) begin
         send_en<=1'b1;
     end
     else if (tx_done) begin
@@ -49,9 +49,6 @@ end
 always @(posedge sys_clk or negedge rst_n) begin
     if (!rst_n) begin
         data<=0;
-    end
-    else if (send_en) begin
-        data<=data;
     end
     else if (tx_done) begin
         data<=data+1;

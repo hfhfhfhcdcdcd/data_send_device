@@ -20,7 +20,7 @@ initial begin
     rst_n=1;
     #500_000_0;
     $stop;
-end
+end 
 
 
 endmodule
