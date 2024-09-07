@@ -4,8 +4,8 @@ input rst_n,
 output uart_tx
 );
 
-reg [7:0] data        ;
-reg send_en           ;
+reg  [7:0] data        ;
+reg  send_go           ;
 wire tx_done          ;
 
 send_byte s1(   
@@ -13,7 +13,7 @@ send_byte s1(
 .rst_n        (rst_n   )   ,
 .time_set     (2)   ,
 .data         (data    )   ,//之前是在tb文件里面给data，send_en，现在是在顶层模块给                            
-.send_en      (send_en )   ,//顶层模块就是负责给子模块赋值的
+.send_go      (send_go )   ,//顶层模块就是负责给子模块赋值的
 .uart_tx      (uart_tx )   ,
 .tx_done      (tx_done) 
 );
@@ -34,16 +34,13 @@ end
 /*--------------send_en--------------*/
 always @(posedge sys_clk or negedge rst_n) begin
     if (!rst_n) begin
-        send_en<=0;
+        send_go<=0;
     end
-    else if (cnt_10ms== 1) begin
-        send_en<=1'b1;
-    end
-    else if (tx_done) begin
-        send_en<=0;
+    else if (cnt_10ms == 1) begin
+        send_go<=1'b1;
     end
     else
-        send_en<=send_en;
+        send_go<=0;   
 end
 /*--------------data--------------*/
 always @(posedge sys_clk or negedge rst_n) begin
